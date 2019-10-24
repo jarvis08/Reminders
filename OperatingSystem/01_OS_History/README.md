@@ -1,23 +1,27 @@
 # 운영체제 개요 및 역사
 
 1. [운영체제 개요](#운영체제-개요)
-2. 운영체제의 역사
-3. [고등 운영체제](#고등 운영체제, Advanced-OS)
-4. 인터럽트 기반 시스템
-5. 이중 모드
-6. 하드웨어 보호
-7. 운영체제 서비스
-8. 시스템 콜
+2. [운영체제의 역사](#운영체제의-역사)
+3. [고등 운영체제](#고등 운영체제,-Advanced-OS)
+4. [인터럽트 기반 시스템](#인터럽트-기반-시스템,-Interrupt-Based-System)
+5. [이중 모드](#이중-모드,-Dual-Mode)
+6. [하드웨어 보호](#하드웨어-보호,-HW-Protection)
+7. [운영체제 서비스](#운영체제-서비스,-OS-Services)
+8. [시스템 콜](#시스템-콜,-System-Call)
 
-## 운영체제 개요
+<br>
+
+<br>
+
+# 1. 운영체제 개요
 
 ### 운영체제의 개념 및 역할
 
 컴퓨터를 조작하는 프로그램이며, 컴퓨터의 자원들을 관리한다.
 
-1. 프로세스 관리, Process Management
-2. 주기억장치 관리, Main Memory Management
-3. 파일 관리, File System Management
+1. **프로세스 관리, Process Management**
+2. **주기억장치 관리, Main Memory Management**
+3. **파일 관리, File System Management**
 
 <br>
 
@@ -28,7 +32,7 @@
 
 <br>
 
-### 컴퓨터의 자원과 구조
+## 1-1. 컴퓨터의 자원과 구조
 
 - **`CPU`**
 
@@ -91,7 +95,7 @@
 
 <br>
 
-### Program & Instruction
+### Instruction과 프로그램
 
 - **`Instruction`**: **H/W**에게 명령하는 코드(명령어)들
 - **`Program`**: Instruction들의 집합
@@ -112,47 +116,43 @@
 
 <br>
 
+<br>
+
 # 2. 운영체제의 역사
 
-### No Operating System
+### 2-1. No Operating System
 
-- 운영체제의 형태
+컴퓨터가 탄생한 1940년대 말 즈음에는 운영체제가 존재하지 않았으며, 컴퓨터 구조는 다음과 같다.
 
-  컴퓨터가 탄생한 1940년대 말 즈음에는 운영체제가 존재하지 않았다.
+- Card Reader
 
-- 컴퓨터의 구조
+  - 연구자가 작성한 코드에 해당하는 카드
+  - 코드 실행을 위한 필수 기능을 실행하는 카드
+    - Compile
+    - Link
+    - Load
 
-  - Card Reader
+- Memory
 
-    - 연구자가 작성한 코드에 해당하는 카드
-    - 코드 실행을 위한 필수 기능을 실행하는 카드
-      - Compile
-      - Link
-      - Load
+- Processing
 
-  - Memory
+- Line Printer
 
-  - Processing
-
-  - Line Printer
-
-    망치로 종이를 두들겨 찍어냄
+  망치로 종이를 두들겨 찍어냄
 
 <br>
 
-### 일괄처리시스템, Batch Processing System
+### 2-2. 일괄처리시스템, Batch Processing System
 
-- 운영체제의 형태
+최초의 운영체제이며, Card Reader의 필수 기능(Compile, Llink, Load)들을 Memory에 상주시킴
 
-  Card Reader의 필수 기능(Compile, Llink, Load)들을 Memory에 상주시키는 OS를 최초로 사용
-
-- MS-DOS는 Batch Processing System
+- ex) MS-DOS
 
 <br>
 
-### 다중프로그래밍 시스템, Multiprogramming System
+### 2-3. 다중프로그래밍 시스템, Multiprogramming System
 
-- Memory에 여러 개의 Program들을 적재하여 처리
+- Main Memory에 여러 개의 Program들을 적재하여 처리
 
 - 한 번에 한 프로그램만을 적재하여 사용하던 일괄처리시스템보다 효율적으로 컴퓨터를 사용
 
@@ -166,39 +166,41 @@
 
 <br>
 
-### 시공유 시스템, Time-Sharing System
+### 2-4. 시공유 시스템, Time-Sharing System
 
-- 단말기(모니터+키보드)를 이용하여 컴퓨터 1대를 여러 사용자가 공유
+**다중프로그래밍 시스템인 컴퓨터 1대**를 **단말기(모니터+키보드)**를 이용하여 **여러 사용자가 공유**
 
-- 강제 절환
+- **`강제 절환`**
 
   컴퓨터의 사용을 N명의 사용자가 번갈아가며 사용
 
-- 시분할 시스템
+- **`시분할 시스템`**
 
-  강제 절환을 하는데, N명의 사용자가 컴퓨터를 짧은 시간 동안 번갈아가며 사용
+  **강제 절환**을 하는데, N명의 사용자가 컴퓨터를 짧은 시간 동안 번갈아가며 사용
 
   ex) 1초를 3명이 나누어 쓸 때, 1인 당 약 30회의 기회를 부여
 
-  컴퓨터의 빠른 속도로 인해 사용자들은 자기 혼자 컴퓨터를 쓰는 것 처럼 느낄 수 있다.
+  **컴퓨터의 빠른 속도로 인해 사용자들은 자기 혼자 컴퓨터를 쓰는 것 처럼 느낄 수 있다**.
 
-- 대화형 시스템(Interactive System)
+- **`대화형 시스템, Interactive System`**
 
   모니터와 키보드를 사용하여 컴퓨터와 대화하듯 사용
 
-- 가상 메모리, Virtual Memory
+- **`가상 메모리, Virtual Memory`**
 
   사용자가 많아짐에 따라 Main Memory가 부족하므로,
 
   Hard Disk를 Main Memory인 것 마냥(실제로는 그렇지 않음) 사용
 
-- Process 간 통신
+- **`Process 간 통신`**
 
   Data를 전송하여 공유
 
-- 동기화
+- **`동기화`**
 
 - Windows, Linux, OSX, Android, iOS 모두 TSS 방식
+
+<br>
 
 <br>
 
@@ -208,77 +210,75 @@
 
 고등 컴퓨터 구조(Advanced Computer Architectures)가 등장하며, 고등 운영체제 또한 등장
 
-- 폰 노이만의 컴퓨터 구조(일반적인 컴퓨터 구조)
+- 일반적인 컴퓨터 구조, **`폰 노이만의 컴퓨터 구조`**
 
-  (하나의 CPU) + (하나의 Memory)
+  : `1 CPU` + `1 Memory`
 
 <br>
 
-### 다중 프로세서 시스템, Multiprocessor System
+### 3-1. 다중 프로세서 시스템, Multiprocessor System
 
-(하나의 Memory)를 (여러 CPU)들이 병렬적으로, 강결합하여 사용
+`하나의 Memory`를 `여러 CPU`들이 **병렬적으로, 강결합**하여 사용
 
 - 다음과 같이도 불림
 
-  - **병렬 시스템, Parallel System**
-  - **강결합 시스템, Tightly-Coupled System**
+  - **`병렬 시스템, Parallel System`**
+  - **`강결합 시스템, Tightly-Coupled System`**
 
 - 장점 3가지
 
-  - Performance
+  - **Performance**
 
-  - Cost
+  - **Cost**
 
-  - Reliability
+  - **Reliability**
 
     고장난 CPU를 다른 CPU가 대체 가능
 
-- 다중 프로세서 운영체제, Multiprocessor OS
+- **`다중 프로세서 운영체제, Multiprocessor OS`**
 
 <br>
 
-### 분산 시스템, Distributed System
+### 3-2. 분산 시스템, Distributed System
 
-분산되어 있는 여러개의 PC Set((하나의 CPU) + (하나의 Memory))들을 LAN(근거리 통신망)을 통해 연결
+분산되어 있는 **여러개의 PC Set(1 CPU + 1 Memory)**들을 **LAN(근거리 통신망)을 통해 연결**
 
 - 다음과 같이도 불림
-  - 다중 컴퓨터 시스템, Multi-Computer System
-  - 소결합 시스템, Loosely-Coupled System
+  - **`다중 컴퓨터 시스템, Multi-Computer System`**
+  - **`소결합 시스템, Loosely-Coupled System`**
 - 장점 3가지
-  - Performance
-  - Cost
-  - Reliability
-- 분산 운영체제, Distributed OS
+  - **Performance**
+  - **Cost**
+  - **Reliability**
+- **분산 운영체제, Distributed OS**
 
 <br>
 
-### 실시간 시스템, Real-Time System
+### 3-3. 실시간 시스템, Real-Time System
 
-빠르기만 한 것이 아닌, Deadline을 준수하도록 작업을 수행
+빠르기만 한 것이 아닌, **Deadline을 준수하도록** 작업을 수행
 
 - 시간 제약 : Deadline
 
-  CPU Scheduling으로 우선 순위를 적용
+  **CPU Scheduling으로 우선 순위를 적용**
 
 - 공장 자동화(FA), 군사, 항공, 우주 등의 분야에서 사용
 
-- 실시간 운영체제, Real-Time OS(=RTOS)
+- **실시간 운영체제, Real-Time OS(=RTOS)**
 
 <br>
 
 <br>
 
-# 4. 인터럽트 기반 시스템
+<br>
 
-## 1-4-1. Interrupt-Based System 정의
+# 4. 인터럽트 기반 시스템, Interrupt-Based System
 
-Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을 기다리며 대기
-
-마우스, 키보드를 포함한 사용자의 동작에 의해 사건(event) 발생 시 Interrupt에 의해 다시 동작
+Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을 기다리며 대기한다. 그러던 중 마우스, 키보드를 포함한 사용자의 동작에 의해 사건(event) 발생 시 Interrupt에 의해 다시 동작
 
 <br>
 
-### 하드웨어 인터럽트, Hardware Interrupt
+### 4-1. 하드웨어 인터럽트, Hardware Interrupt
 
 1. 마우스, 키보드와 같은 H/W를 움직여 전기 신호를 CPU에 전송
 
@@ -290,7 +290,7 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
-### 소프트웨어 인터럽트, Software Interrupt
+### 4-2. 소프트웨어 인터럽트, Software Interrupt
 
 - 사용자 프로그램이 소프트웨어 인터럽트를 일으킴(운영체제의 기능을 이용)
 
@@ -317,9 +317,11 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
-## 1-4-2. 인터럽트 기반 운영체제
+<br>
 
-현재 대부분의 OS들은 인터럽트 기반 운영체제
+## 4-3. 인터럽트 기반 운영체제, Interrupt-Based OS
+
+**현재 대부분의 OS들은 인터럽트 기반 운영체제**
 
 - 운영체제는 메모리에 상주하며, 평소에는 대기 상태를 유지
 
@@ -347,6 +349,8 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
+<br>
+
 # 5. 이중 모드, Dual Mode
 
 대부분의 운영체제는 이중 모드를 지원하며, OS가 이중 모드를 통해 보호하고자 하는 대상은 다음 세가지이다.
@@ -354,10 +358,6 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 1. 입출력 장치
 2. 메모리
 3. CPU
-
-<br><br>
-
-## 이중 모드, Dual Mode
 
 서버 컴퓨터는 여러 사람에게 동시에 사용될 수 있는 환경이다. 개인 PC일 지라도 여러 개의 프로그램을 동시에 사용한다. 여러 사용자 혹은 프로그램들이 STOP, HALT, RESET과 같은 명령어를 남용한다면 큰 문제가 발생할 수 있다.
 
@@ -377,7 +377,9 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
-### CPU에서 이중 모드 제어하기
+<br>
+
+## 5-1. CPU에서 이중 모드 제어하기
 
 - CPU의 구조
   - 레지스터, Register
@@ -394,15 +396,19 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 마우스, 키보드와 같은 I/O 장비 또한 관리자 모드로만 조작할 수 있으며, 사용자 프로그램 실행 시 사용자 모드로 flag가 변환된다. 사용자 프로그램 사용 중에도 마우스 및 키보드 조작, H/W에 접근, 프린터 및 모니터 사용이 필요하다면, OS에 요청하여 관리자 모드로 전환하고, 해당하는 SW Interrupt를 발생시켜 Interrupt Service Routine을 발생시켜야 한다. 만약 사용자 프로그램이 직접 ISR을 조작하게 한다면, 보안 등에서 큰 문제가 발생할 수 있다.
 
+<br>
 
+<br>
 
-# 1-6. 하드웨어 보호, HW Protection
+<br>
+
+# 6. 하드웨어 보호, HW Protection
 
 운영체제는 이중 모드를 활용하여 하드웨어를 보호한다.
 
-<br><br>
+<br>
 
-## 1-6-1. 입/출력 장치 보호, Input/Output Device Protection
+## 6-1. 입/출력 장치 보호, Input/Output Device Protection
 
 사용자의 잘못된 입출력 명령을 방지
 
@@ -429,9 +435,7 @@ OS는 입출력을 특권 명령(Previleged Instruction)으로만 사용 가능�
 
 <br>
 
-<br>
-
-## 1-6-2. 메모리 보호, Memory Protection
+## 6-2. 메모리 보호, Memory Protection
 
 어느 사용자 프로그램이 다른 사용자의 메모리, 혹은 운영체제 메모리 영역으로 접근 시 차단한다.
 
@@ -447,9 +451,7 @@ CPU는 Main Memory에 **Address Bus**를 통해 특정 주소의 데이터를 �
 
 <br>
 
-<br>
-
-## 1-6-3. CPU 보호, CPU Protection
+## 6-3. CPU 보호, CPU Protection
 
 어느 사용자 혹은 프로그램이 CPU를 독점하여 사용하려 하는 경우를 방지한다.
 
@@ -459,9 +461,11 @@ CPU는 Main Memory에 **Address Bus**를 통해 특정 주소의 데이터를 �
 
 <br>
 
+<br>
+
 # 7. 운영체제 서비스, OS Services
 
-## 1-7-1. 프로세스 관리, Process Management
+## 7-1. 프로세스 관리, Process Management
 
 프로세스, Process: **메모리에서 실행 중인 프로그램**, Program in execution
 
@@ -480,7 +484,7 @@ CPU는 Main Memory에 **Address Bus**를 통해 특정 주소의 데이터를 �
 
 <br>
 
-## 1-7-2. 주기억장치 관리, Main Memory Management
+## 7-2. 주기억장치 관리, Main Memory Management
 
 ### 주요 기능
 
@@ -502,7 +506,7 @@ CPU는 Main Memory에 **Address Bus**를 통해 특정 주소의 데이터를 �
 
 <br>
 
-## 1-7-3. 파일 관리, File Management
+## 7-3. 파일 관리, File Management
 
 **Track**/**Sector**로 구성된 **디스크**를 **파일**이라는 논리적 관점으로 관리
 
@@ -528,7 +532,7 @@ Hard Disk는 자성을 띈 판 위에 **Track**이 깔려 있으며, Track은 �
 
 <br>
 
-## 1-7-4. 보조 기억 장치 관리, Secondary Storage Management
+## 7-4. 보조 기억 장치 관리, Secondary Storage Management
 
 - 보조 기억 장치(Secondary Storage)의 예시
 
@@ -554,7 +558,7 @@ Hard Disk는 자성을 띈 판 위에 **Track**이 깔려 있으며, Track은 �
 
 <br>
 
-## 1-7-5. 입출력 장치 관리, I/O Device Management
+## 7-5. 입출력 장치 관리, I/O Device Management
 
 ### 주요 기능
 
@@ -580,9 +584,11 @@ Hard Disk는 자성을 띈 판 위에 **Track**이 깔려 있으며, Track은 �
 
 <br>
 
-# 1-8. 시스템 콜, System Call
+<br>
 
-## 1-8-1. 시스템 콜의 정의
+# 8. 시스템 콜, System Call
+
+## 8-1. 시스템 콜의 정의
 
 Application이 운영체제 서비스(OS Service)를 받기 위해 호출하는 행위
 
@@ -590,7 +596,7 @@ Application이 운영체제 서비스(OS Service)를 받기 위해 호출하는 
 
 <br>
 
-## 1-8-2. 주요 시스템 콜
+## 8-2. 주요 시스템 콜
 
 ### Process
 
@@ -664,7 +670,7 @@ Application이 운영체제 서비스(OS Service)를 받기 위해 호출하는 
 
 <br>
 
-## 1-8-3. 시스템 콜 만들어 보기
+## 8-3. 시스템 콜 만들어 보기
 
 파일을 생성하는 과정으로 예를 들어 보겠습니다.
 
