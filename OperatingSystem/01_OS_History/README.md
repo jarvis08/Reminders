@@ -11,6 +11,8 @@
 
 <br>
 
+<a href="https://github.com/jarvis08/Reminders">메인으로</a>
+
 <br>
 
 # 1. 운영체제 개요
