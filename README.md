@@ -12,26 +12,26 @@ Keyword와 간단한 description을 통해 개념을 이해하거나, 주기적�
 
 ### Operating System
 
-- [Operating System's History](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/01_OS_History)
-- [Process Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/02_ProcessManagement)
-- [Main Memory Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/03_MainMemoryManagement)
-- [File System Manangement](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/04_FileSystemManagement)
+- [운영체제의 개요 및 역사, Introduction and History](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/01_OS_History)
+- [프로세스 관리, Process Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/02_ProcessManagement)
+- [메인 메모리 관리, Main Memory Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/03_MainMemoryManagement)
+- [파일 시스템 관리, File System Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/04_FileSystemManagement)
 
 <br>
 
 ### Data Structure
 
-- [Linear Structure](https://github.com/jarvis08/Reminders/tree/master/DataStructure/01_Linear)
-- [Tree](https://github.com/jarvis08/Reminders/tree/master/DataStructure/02_Tree)
-- [Graph](https://github.com/jarvis08/Reminders/tree/master/DataStructure/03_Graph)
+- [선형 구조, Linear Structure](https://github.com/jarvis08/Reminders/tree/master/DataStructure/01_Linear)
+- [비선형 구조 - 트리, Tree](https://github.com/jarvis08/Reminders/tree/master/DataStructure/02_Tree)
+- [비선형 구조 - 그래프, Graph](https://github.com/jarvis08/Reminders/tree/master/DataStructure/03_Graph)
 
 <br>
 
 ### Algorithm
 
-- [Sorting Algorithms, O(n)](https://github.com/jarvis08/Reminders/tree/master/Algorithm/01_Sorting_O(n))
-- [Sorting Algorithms, O(nlogn)](https://github.com/jarvis08/Reminders/tree/master/Algorithm/02_Sorting_O(nlogn))
-- [Sorting Algorithms, O(n^2)](https://github.com/jarvis08/Reminders/tree/master/Algorithm/03_Sorting_O(n^2))
+- [정렬 알고리즘 - O(n)](https://github.com/jarvis08/Reminders/tree/master/Algorithm/01_Sorting_O(n))
+- [정렬 알고리즘 - O(nlogn)](https://github.com/jarvis08/Reminders/tree/master/Algorithm/02_Sorting_O(nlogn))
+- [정렬 알고리즘 - O(n^2)](https://github.com/jarvis08/Reminders/tree/master/Algorithm/03_Sorting_O(n^2))
 
 <br>
 
