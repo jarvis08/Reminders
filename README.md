@@ -15,7 +15,7 @@ Keyword와 간단한 description을 통해 개념을 이해하거나, 주기적�
 - [Operating System's History](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/01_OS_History)
 - [Process Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/02_ProcessManagement)
 - [Main Memory Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/03_MainMemoryManagement)
-- [Auxiliary Memory Manangement](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/04_AuxiliaryMemoryManagement)
+- [File System Manangement](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/04_FileSystemManagement)
 
 <br>
 
