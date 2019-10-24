@@ -32,8 +32,6 @@
 
 <br>
 
-<a href="#목차" style="text-align: right;">맨 위로</a>
-
 ## 1-1. 컴퓨터의 자원과 구조
 
 - **`CPU`**
@@ -116,7 +114,7 @@
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -204,7 +202,7 @@
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -270,7 +268,7 @@
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -319,8 +317,6 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
-<br>
-
 ## 4-3. 인터럽트 기반 운영체제, Interrupt-Based OS
 
 **현재 대부분의 OS들은 인터럽트 기반 운영체제**
@@ -349,7 +345,7 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -400,7 +396,7 @@ Operating System은 Booting 종료 시, 메모리에 상주 및 사건(event)을
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -461,7 +457,7 @@ CPU는 Main Memory에 **Address Bus**를 통해 특정 주소의 데이터를 �
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -584,7 +580,7 @@ Hard Disk는 자성을 띈 판 위에 **Track**이 깔려 있으며, Track은 �
 
 <br>
 
-<br>
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 <br>
 
@@ -706,7 +702,9 @@ EBX = file_name
 INT = 80H
 ```
 
+<br>
 
+<a href="#목차" style="text-align: right;">맨 위로</a>
 
 
 
