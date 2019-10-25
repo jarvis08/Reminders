@@ -38,3 +38,19 @@ Keyword와 간단한 description을 통해 개념을 이해하거나, 주기적�
 
 ### Machine Learning
 
+<br>
+
+<br>
+
+<br>
+
+## Reference
+
+- Operating System
+  - 운영체제 강의(KOCW), 양희재 교수님, 경성대학교
+- Algorithm
+  - [진호박's Life Style](https://jinhobak.tistory.com/221)
+  - [groonngroo](https://groonngroo.tistory.com/37)
+  - [Heee's Development Blog](https://gmlwjd9405.github.io/2018/05/06/algorithm-selection-sort.html)
+  - [Ju Factory](https://yujuwon.tistory.com/entry/병합정렬Merge-Sort)
+
