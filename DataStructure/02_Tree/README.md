@@ -1,16 +1,16 @@
 ### 목차
 
-1. [트리 개요](#트리 개요)
+1. [트리 개요](#1-트리-개요)
    1. 트리의 표현
    2. 트리의 종류
    3. 트리의 용어
    4. 균형 트리의 종류
-2. [이진 트리, Binary Tree](#이진-트리-Binary-Tree)
+2. [이진 트리, Binary Tree](#2-이진-트리-Binary-Tree)
    1. 이진 트리의 형태
    2. 이진 트리의 표상
    3. 이진 트리의 순회
    4. 힙
-3. [이진 탐색 트리, Binary Search Tree](#이진-탐색-트리-Binary-Search-Tree)
+3. [이진 탐색 트리, Binary Search Tree](#3-이진-탐색-트리-Binary-Search-Tree)
    1. 이진 탐색 트리의 정의
    2. 이진 탐색 트리의 순회
    3. (균형) Red-Black Tree
