@@ -15,7 +15,8 @@ Keyword와 간단한 description을 통해 개념을 이해하거나, 주기적�
 - [운영체제 개요 및 역사, Introduction and History](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/01_OS_History)
 - [프로세스 관리, Process Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/02_ProcessManagement)
 - [메인 메모리 관리, Main Memory Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/03_MainMemoryManagement)
-- [파일 시스템 관리, File System Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/04_FileSystemManagement)
+- [가상 메모리, Virtual Memory](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/04_VirtualMemory)
+- [파일 시스템 관리, File System Management](https://github.com/jarvis08/Reminders/tree/master/OperatingSystem/05_FileSystemManagement)
 
 <br>
 
