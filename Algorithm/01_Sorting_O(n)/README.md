@@ -24,8 +24,6 @@
 
 <br>
 
-<a href="#목차" style="text-align: right;">맨 위로</a>
-
 <br>
 
 ## **삽입 정렬, Insertion Sort**
