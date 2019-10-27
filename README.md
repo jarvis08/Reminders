@@ -38,6 +38,14 @@ Keyword와 간단한 description을 통해 개념을 이해하거나, 주기적�
 
 ### Machine Learning
 
+[Link](https://github.com/jarvis08/Reminders/tree/master/MachineLearning/README.md)
+
+<br>
+
+### Web Programming
+
+[Link](https://github.com/jarvis08/Reminders/tree/master/Web/README.md)
+
 <br>
 
 <br>
